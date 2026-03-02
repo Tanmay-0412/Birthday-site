@@ -47,7 +47,7 @@ export default function BirthdayCountdown() {
     if (
       formData.food.trim().toLowerCase() !== correctAnswers.food.toLowerCase()
     ) {
-      newErrors.food = "😏 Nope! You should definitely know this.";
+      newErrors.food = "Think like a Bad Boy, Riddhu !!.";
     }
 
     setErrors(newErrors);
