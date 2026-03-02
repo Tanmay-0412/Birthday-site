@@ -9,27 +9,23 @@ import "swiper/css/pagination";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-// const images = [
-//   "/gallery/1.jpg",
-//   "/gallery/2.jpg",
-//   "/gallery/3.jpg",
-//   "/gallery/4.jpg",
-//   "/gallery/5.jpg",
-//   "/gallery/6.jpg",
-//   "/gallery/7.jpg",
-//   "/gallery/8.jpg",
-// ];
-
 const images = [
-  "https://images.unsplash.com/photo-1511988617509-a57c8a288659",
-  "https://images.unsplash.com/photo-1519741497674-611481863552",
-  "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92",
-  "https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2",
-  "https://images.unsplash.com/photo-1513151233558-d860c5398176",
-  "https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d",
-  "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
-  "https://images.unsplash.com/photo-1511285560929-80b456fea0bc"
+  "/1.jpg",
+  "/2.jpg",
+  "/3.jpg",
+  "/4.jpg",
 ];
+
+// const images = [
+//   "https://images.unsplash.com/photo-1511988617509-a57c8a288659",
+//   "https://images.unsplash.com/photo-1519741497674-611481863552",
+//   "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92",
+//   "https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2",
+//   "https://images.unsplash.com/photo-1513151233558-d860c5398176",
+//   "https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d",
+//   "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
+//   "https://images.unsplash.com/photo-1511285560929-80b456fea0bc"
+// ];
 
 export default function GalleryCarousel() {
   const router = useRouter();
