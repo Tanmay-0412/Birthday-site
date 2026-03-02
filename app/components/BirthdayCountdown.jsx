@@ -7,8 +7,9 @@ import { useRouter } from "next/navigation";
 export default function BirthdayCountdown() {
   const [showForm, setShowForm] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [wish, setWish] = useState("");
   const router = useRouter();
-  const targetDate = new Date("2026-03-03T00:00:00");
+  const targetDate = new Date("2026-03-04T00:00:00");
   const [formData, setFormData] = useState({
     name: "",
     animal: "",
@@ -28,7 +29,7 @@ export default function BirthdayCountdown() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    localStorage.setItem("birthdayWish", wish);
     const newErrors = {};
 
     if (
@@ -41,7 +42,7 @@ export default function BirthdayCountdown() {
       formData.animal.trim().toLowerCase() !==
       correctAnswers.animal.toLowerCase()
     ) {
-      newErrors.animal = "Wrong! Try guessing my cutest favorite animal.";
+      newErrors.animal = "Wrong! Try guessing your favorite animal.";
     }
 
     if (
@@ -201,7 +202,8 @@ export default function BirthdayCountdown() {
                     alert("😂 You have NO option other than me!");
                   }
                 }}
-                required              >
+                required
+              >
                 <option value="">Who is your favorite person?</option>
                 <option value="Tanmay">Tanmay</option>
                 <option value="Tanmay">Tanmay</option>
@@ -211,6 +213,8 @@ export default function BirthdayCountdown() {
               <textarea
                 placeholder="Leave a birthday wish 🎂"
                 rows={3}
+                value={wish}
+                onChange={(e) => setWish(e.target.value)}
                 className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
 
