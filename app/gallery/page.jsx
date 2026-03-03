@@ -6,10 +6,12 @@ export default function GalleryPage() {
   return (
     <main
       className="min-h-screen flex flex-col items-center justify-center 
-        bg-gradient-to-br from-black via-yellow-300 to-yellow-500 
-        text-white"
+  bg-gradient-to-bl from-orange-300 via-yellow-500 to-yellow-700 
+  text-white"
+
+
     >
-      <h4 className="text-sm sm:text-xl md:text-xl font-semibold mb-2 text-center tracking-wide">
+      <h4 className="text-sm sm:text-xl md:text-xl font-semibold mb-2 text-center tracking-wide text-black">
         <SparklesText> Our Beautiful Memories ❤️ </SparklesText>
       </h4>
 
