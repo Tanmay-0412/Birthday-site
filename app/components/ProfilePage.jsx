@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 
 export default function ProfilePage() {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "Dr Riddhi"; // Your Name
+  const fullText = "Dr. Riddhi"; // Your Name
 
   // Typing animation
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function ProfilePage() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          src="/profile.jpg"
+          src="/icon.jpg"
           alt="Profile"
           className="w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-purple-500 shadow-lg object-cover"
         />
